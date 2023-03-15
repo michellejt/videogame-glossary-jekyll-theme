@@ -21,7 +21,23 @@ body {
     align-items: center;
 }
 
+.term-of-the-day {
+    padding: 10px 400px 10px 400px;
+}
 
+.term-of-the-day h3 {
+  font-weight: 600;
+  font-size: 2rem;
+    margin:2px;
+}
+
+.term-of-the-day h3 span {
+  font-weight: 200
+}
+.term-of-the-day p {
+  font-size:1.4rem;
+    line-height:1.2
+}
 .home h1 {
     font-size: 3rem;
     margin: 20px;
