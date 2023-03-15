@@ -23,9 +23,11 @@ body {
 
 
 .home h1 {
-    font-size:5rem;
-    margin:20px;
+    font-size: 3rem;
+    margin: 20px;
     font-family: 'Cutive', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
 }
 .home h2 {
     font-size:2rem;
