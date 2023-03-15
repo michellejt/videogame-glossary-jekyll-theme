@@ -1,0 +1,33 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    {% if page.title %}<meta property="og:title" content="{{ page.title }}">{% endif %}
+    {% if page.url %}<meta property="og:url" content="{{ site.rooturl }}{{ page.url }}">{% endif %}
+    {% if page.description %}<meta property="og:description" content="{{ page.description }}">{% endif %}
+    {% if page.bannerImage %}<meta property="og:image" content="{{ site.rooturl }}{{ page.url | replace: 'index', '' }}{{ page.bannerImage }}">{% endif %}
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@">
+    {% if page.title %}<meta name="twitter:title" content="{{ page.title }}">{% endif %}
+    {% if page.description %}<meta name="twitter:description" content="{{ page.description }}">{% endif %}
+    {% if page.bannerImage %}<meta name="twitter:image" content="{{ site.rooturl }}{{ page.url | replace: 'index', '' }}{{ page.bannerImage }}">{% endif %}
+   
+
+      <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+  
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+      <script src="https://kit.fontawesome.com/c92a73f1af.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="/assets/css/main.css">
+  
+    <!-- {% include custom-head.html %} -->
+
+  </head>
