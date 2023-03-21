@@ -76,3 +76,8 @@ scrollLinks.forEach((link) => {
     linksContainer.style.height = 0;
   });
 });
+/****************/
+function modeSwitch() {
+  const element = document.body;
+  element.classList.toggle("dark-mode");
+}
