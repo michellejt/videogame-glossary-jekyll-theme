@@ -84,8 +84,8 @@ function modeSwitch() {
 /****************/
 function generateRandomPosts()
 {
-    $.getJSON("/assets/fetch.json", function(data) {
-        console.log("[fetch.json loaded for random posts]");
+    $.getJSON("/assets/random.json", function(data) {
+        console.log("[random.json loaded for random posts]");
 
         var postsCount = data.length;
         var posts = data;
