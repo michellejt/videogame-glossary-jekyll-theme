@@ -47,6 +47,6 @@ function generateRandomPosts()
 }
 
 $(document).ready(function() {
-    console.log('hiii')
+  generateRandomPosts()
 });
 
