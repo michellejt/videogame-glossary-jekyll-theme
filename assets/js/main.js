@@ -124,5 +124,6 @@ function generateRandomPosts()
     });
 }
 
+$(document).ready(function() {
     generateRandomPosts();
-
+});
