@@ -124,6 +124,8 @@ function generateRandomPosts()
     });
 }
 
-$(document).ready(function() {
+$(document).ready(function($) {
+  setTimeout(function() {
     generateRandomPosts();
+  }, 1000);
 });
