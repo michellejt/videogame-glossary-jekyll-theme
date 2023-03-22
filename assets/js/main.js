@@ -124,7 +124,6 @@ function generateRandomPosts()
     });
 }
 
-$.noConflict();
-jQuery( document ).ready(function( $ ) {
-    generateRandomPosts();
-});
+window.onload = function() {
+  generateRandomPosts();
+};
