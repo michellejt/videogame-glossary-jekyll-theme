@@ -92,7 +92,7 @@ function generateRandomPosts()
 
         var randomIndexUsed = [];
         var counter = 0;
-        var numberOfPosts = 5;
+        var numberOfPosts = 1;
 
         var divRandomPosts = $("#random_posts");
 
@@ -124,6 +124,6 @@ function generateRandomPosts()
     });
 }
 
-$(document).ready(function() {
-    generateRandomPosts();
+jQuery(document).ready(function () {
+  generateRandomPosts();
 });
