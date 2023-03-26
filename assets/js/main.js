@@ -18,7 +18,7 @@ function generateRandomPosts()
 
         var divRandomPosts = $("#random_posts");
 
-        divRandomPosts.append('<h2>other posts</h2><hr />');
+        divRandomPosts.append('<h2>other posts</h2>');
 
         while (counter < numberOfPosts)
         {
@@ -33,7 +33,7 @@ function generateRandomPosts()
                 {
                     divRandomPosts.append('<p><a href="' + postHREF + '">' + postTitle + '</a></p>');
                 }
-                else
+                else 
                 {
                     divRandomPosts.append('<p><a href="' + postHREF + '">' + postTitle + '</a></p><hr />');
                 }
