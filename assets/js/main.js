@@ -33,11 +33,11 @@ function generateRandomPosts()
 
                 if (counter == (numberOfPosts - 1))
                 {
-                    divRandomPosts.append('<p><a href="' + postHREF + '">' + postTitle + '</a></p> <p><a href="' + postContent + '"></p>');
+                    divRandomPosts.append('<p><a href="' + postHREF + '">' + postTitle + '</a></p> <p> '+ postContent +' </p>');
                 }
                 else 
                 {
-                    divRandomPosts.append('<p><a href="' + postHREF + '">' + postTitle + '</a></p> <p><a href="' + postContent + '"></p> <hr />');
+                    divRandomPosts.append('<p><a href="' + postHREF + '">' + postTitle + '</a></p> <p> '+ postContent +' </p> <hr />');
                 }
 
                 randomIndexUsed.push(randomIndex);
