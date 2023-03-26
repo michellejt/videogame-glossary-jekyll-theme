@@ -15,6 +15,7 @@ function generateRandomPosts()
         var randomIndexUsed = [];
         var counter = 0;
         var numberOfPosts = 1;
+        var postContent = posts[randomIndex].content;
 
         var divRandomPosts = $("#random_posts");
 
