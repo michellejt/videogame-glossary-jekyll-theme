@@ -26,7 +26,7 @@ function generateRandomPosts()
 
             if (randomIndexUsed.indexOf(randomIndex) == "-1")
             {
-                var postHREF = posts[randomIndex].href;
+                var postHREF = posts[randomIndex].url;
                 var postTitle = posts[randomIndex].title;
 
                 if (counter == (numberOfPosts - 1))
