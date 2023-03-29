@@ -37,20 +37,18 @@ function generateRandomPosts()
 
                 if (counter == (numberOfPosts - 1))
                 {
-                    const tipOfDay = divRandomPosts.append('<p> '+ postContent +' </p>');
-                    console.log(tipOfDay)
+                    divRandomPosts.append('<p> '+ postContent +' </p>');
                 }
                 else 
                 {
-                    const tipOfDay =  divRandomPosts.append('<p> '+ postContent +' </p>');
-                    console.log(tipOfDay)
+                    divRandomPosts.append('<p> '+ postContent +' </p>');
                 }
-               
+
                 randomIndexUsed.push(randomIndex);
 
                 counter++;
 
-                
+                console.log(tipOfDay)
             }
         }
     });
