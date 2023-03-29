@@ -19,9 +19,11 @@ function generateRandomPosts()
 
         var divRandomPosts = $("#random_posts");
 
-        //var showContent = posts.content;
+        var showContent = posts.show;
 
-        console.log(posts)
+        console.log(showContent)
+
+
 
         while (counter < numberOfPosts)
         {
