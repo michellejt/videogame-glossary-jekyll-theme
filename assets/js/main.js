@@ -19,21 +19,24 @@ function generateRandomPosts()
 
         var divRandomPosts = $("#random_posts");
 
-        var showContent = posts[3]
+        
 
         console.log(posts)
 
-        console.log(showContent)
+        
 
         while (counter < numberOfPosts)
         {
             var randomIndex = Math.floor(Math.random() * postsCount);
 
-            
+            var postHREF = posts[randomIndex].url;
+            var showContent = posts[randomIndex].show
+            console.log(showContent)
+
 
             if ( randomIndexUsed.indexOf(randomIndex) == "-1")
             {
-                var postHREF = posts[randomIndex].url;
+   
                 var postTitle = posts[randomIndex].title;
                 var postContent = posts[randomIndex].content;
                 divRandomPosts.append('<h3>Term of the day: <span><a href="' + postHREF + '">' + postTitle + '</a></span></h3>');
