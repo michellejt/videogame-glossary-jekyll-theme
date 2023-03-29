@@ -52,7 +52,17 @@ function generateRandomPosts()
     });
 }
 
-$(document).ready(function() {
-  setTimeout(generateRandomPosts, 2000);
-});
+var intervalId = window.setInterval(function() {
+    generateRandomPosts()
+}, 5000)
+
+/* $(document).ready(function() {
+  generateRandomPosts()
+}); */
+
+//loads after 2 seconds
+/* $(document).ready(function() {
+    setTimeout(generateRandomPosts, 2000);
+  }); */
+  
 
