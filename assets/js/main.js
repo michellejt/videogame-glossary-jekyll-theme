@@ -34,7 +34,7 @@ function generateRandomPosts()
             console.log(showContent)
 
 
-            if ( randomIndexUsed.indexOf(randomIndex) == "-1")
+            if ( showContent === "show" | randomIndexUsed.indexOf(randomIndex) == "-1")
             {
    
                 var postTitle = posts[randomIndex].title;
