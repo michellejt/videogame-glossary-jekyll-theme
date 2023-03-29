@@ -19,13 +19,17 @@ function generateRandomPosts()
 
         var divRandomPosts = $("#random_posts");
 
-     
+        //var showContent = posts.content;
+
+        console.log(posts)
 
         while (counter < numberOfPosts)
         {
             var randomIndex = Math.floor(Math.random() * postsCount);
 
-            if (randomIndexUsed.indexOf(randomIndex) == "-1")
+            
+
+            if ( randomIndexUsed.indexOf(randomIndex) == "-1")
             {
                 var postHREF = posts[randomIndex].url;
                 var postTitle = posts[randomIndex].title;
