@@ -16,14 +16,9 @@ function generateRandomPosts()
         var counter = 0;
         var numberOfPosts = 1;
         
-
-        var divRandomPosts = $("#random_posts");
-
-        
+        var divRandomPosts = $("#random_posts");        
 
         console.log(posts)
-
-        
 
         while (counter < numberOfPosts)
         {
@@ -31,7 +26,6 @@ function generateRandomPosts()
 
             var postHREF = posts[randomIndex].url;
             var showContent = posts[randomIndex].show
-            console.log(showContent)
 
 
             if ( showContent === "show" && randomIndexUsed.indexOf(randomIndex) == "-1")
@@ -59,6 +53,6 @@ function generateRandomPosts()
 }
 
 $(document).ready(function() {
-  generateRandomPosts()
+  setTimeout(generateRandomPosts, 2000);
 });
 
