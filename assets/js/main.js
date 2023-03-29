@@ -19,7 +19,7 @@ function generateRandomPosts()
 
         var divRandomPosts = $("#random_posts");
 
-        var showContent = posts[randomIndex].show
+        var showContent = posts[3]
 
         console.log(posts)
 
