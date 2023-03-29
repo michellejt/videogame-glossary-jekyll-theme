@@ -33,22 +33,24 @@ function generateRandomPosts()
    
                 var postTitle = posts[randomIndex].title;
                 var postContent = posts[randomIndex].content;
-                const tipOfDay = divRandomPosts.append('<h3>Term of the day: <span><a href="' + postHREF + '">' + postTitle + '</a></span></h3>');
+                divRandomPosts.append('<h3>Term of the day: <span><a href="' + postHREF + '">' + postTitle + '</a></span></h3>');
 
                 if (counter == (numberOfPosts - 1))
                 {
-                    divRandomPosts.append('<p> '+ postContent +' </p>');
+                    const tipOfDay = divRandomPosts.append('<p> '+ postContent +' </p>');
+                    console.log(tipOfDay)
                 }
                 else 
                 {
-                    divRandomPosts.append('<p> '+ postContent +' </p>');
+                    const tipOfDay =  divRandomPosts.append('<p> '+ postContent +' </p>');
+                    console.log(tipOfDay)
                 }
-
+               
                 randomIndexUsed.push(randomIndex);
 
                 counter++;
 
-                console.log(tipOfDay)
+                
             }
         }
     });
