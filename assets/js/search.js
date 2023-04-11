@@ -27,7 +27,7 @@ class jekyllSearch {
         <li class="result">
             <article class="result__article  article">
                 <h4>
-                  <a href="${this.siteURL + item.url}">${item.title}</a>
+                  <a href="${item.url}">${item.title}</a>
                 </h4>
                 <p>${item.excerpt}</p>
             </article>
