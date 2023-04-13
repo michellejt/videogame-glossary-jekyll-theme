@@ -5,39 +5,23 @@ function modeSwitch() {
 }
 /****************/
 
-const colourRadioButtons = document.getElementById("radioButtonsWrapElem");
-let data = {};
-
-if (window.localStorage.getItem("data")) {
-    data = JSON.parse(window.localStorage.getItem("data"));
-} else {
-    data = {
-        "White": false,
-        "Light Grey": false,
-        "Dark Grey": false,
-        "Black": false,
+$(document).ready(function() {
+    var csshref = localStorage["css"];
+    if (csshref) {
+        $("#bg").prop("href", csshref);
     }
-}
-for (let key in data) {
-    let label = document.createElement("label");
-    label.innerText = key;
-    let input = document.createElement("input");
-    input.type = "radio";
-    input.name = "colour";
-	input.checked = data[key] ? data[key] : false;
-    input.addEventListener('change', () => {
-        Object.keys(data).forEach(key => {
-            data[key] = false;
-        })
-        data[key] = true;
-		console.log(data)
-    });
+    var activeid = localStorage["activeid"];
+    if (activeid) {
+        $("#" + activeid).prop("checked", true).closest("label").addClass("active");
+    }
 
-    label.appendChild(input);
-    colourRadioButtons.appendChild(label);
-}
-console.log(data)
-window.localStorage.setItem("data", JSON.stringify(data));
+    $('#btn-switch [type="radio"]').on("change", function() {
+        $("#bg").attr("href", $(this).data('color'));        
+        localStorage.setItem('css', $(this).data('color'));        
+        localStorage.setItem('activeid', $(this).prop('id'));        
+        return false;
+    });
+});
 
 
 /*************** */
