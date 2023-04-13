@@ -4,6 +4,43 @@ function modeSwitch() {
   element.classList.toggle("dark-mode");
 }
 /****************/
+
+const colourRadioButtons = document.getElementById("radioButtonsWrapElem");
+let data = {};
+
+if (window.localStorage.getItem("data")) {
+    data = JSON.parse(window.localStorage.getItem("data"));
+} else {
+    data = {
+        "White": false,
+        "Light Grey": false,
+        "Dark Grey": false,
+        "Black": false,
+    }
+}
+for (let key in data) {
+    let label = document.createElement("label");
+    label.innerText = key;
+    let input = document.createElement("input");
+    input.type = "radio";
+    input.name = "colour";
+	input.checked = data[key] ? data[key] : false;
+    input.addEventListener('change', () => {
+        Object.keys(data).forEach(key => {
+            data[key] = false;
+        })
+        data[key] = true;
+		console.log(data)
+    });
+
+    label.appendChild(input);
+    colourRadioButtons.appendChild(label);
+}
+console.log(data)
+window.localStorage.setItem("data", JSON.stringify(data));
+
+
+/*************** */
 function generateRandomPosts()
 {
     $.getJSON("/assets/random.json", function(data) {
@@ -63,6 +100,7 @@ function generateRandomPosts()
 $(document).ready(function() {
   generateRandomPosts()
 }); 
+
 
 //loads after 2 seconds
 /* $(document).ready(function() {

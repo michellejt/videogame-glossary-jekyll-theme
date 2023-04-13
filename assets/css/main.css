@@ -22,7 +22,8 @@ body {
 }
 
 .term-of-the-day {
-    padding: 10px 400px 10px 400px;
+  width: calc(50% - -6em);
+  margin: auto;
 }
 
 .term-of-the-day h3 {
