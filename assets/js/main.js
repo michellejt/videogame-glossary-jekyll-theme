@@ -6,15 +6,15 @@ function modeSwitch() {
 /****************/
 
 $(document).ready(function(){
-    var radios = document.getElementsByName("seconds");
-    var val = localStorage.getItem('seconds');
+    var radios = document.getElementsByName("light-dark");
+    var val = localStorage.getItem('light-dark');
     for(var i=0;i<radios.length;i++){
       if(radios[i].value == val){
         radios[i].checked = true;
       }
     }
-    $('input[name="seconds"]').on('change', function(){
-      localStorage.setItem('seconds', $(this).val());
+    $('input[name="light-dark"]').on('change', function(){
+      localStorage.setItem('light-dark', $(this).val());
     
     });
   });
@@ -82,7 +82,7 @@ $(document).ready(function() {
 }); 
 
 
-//loads after 2 seconds
+//loads after 2 light-dark
 /* $(document).ready(function() {
     setTimeout(generateRandomPosts, 2000);
   }); */
