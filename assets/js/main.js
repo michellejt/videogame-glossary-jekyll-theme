@@ -6,15 +6,15 @@ function modeSwitch() {
 /****************/
 
 $(document).ready(function(){
-    var radios = document.getElementsByName("light-dark");
-    var val = localStorage.getItem('light-dark');
+    var radios = document.getElementsByName("mode-switch");
+    var val = localStorage.getItem('mode-switch');
     for(var i=0;i<radios.length;i++){
       if(radios[i].value == val){
         radios[i].checked = true;
       }
     }
-    $('input[name="light-dark"]').on('change', function(){
-      localStorage.setItem('light-dark', $(this).val());
+    $('input[name="mode-switch"]').on('change', function(){
+      localStorage.setItem('mode-switch', $(this).val());
     
     });
   });
@@ -82,7 +82,7 @@ $(document).ready(function() {
 }); 
 
 
-//loads after 2 light-dark
+//loads after 2 mode-switch
 /* $(document).ready(function() {
     setTimeout(generateRandomPosts, 2000);
   }); */
