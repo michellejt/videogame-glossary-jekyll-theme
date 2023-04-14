@@ -5,23 +5,19 @@ function modeSwitch() {
 }
 /****************/
 
-$(document).ready(function() {
-    var csshref = localStorage["css"];
-    if (csshref) {
-        $("#bg").prop("href", csshref);
+$(document).ready(function(){
+    var radios = document.getElementsByName("seconds");
+    var val = localStorage.getItem('seconds');
+    for(var i=0;i<radios.length;i++){
+      if(radios[i].value == val){
+        radios[i].checked = true;
+      }
     }
-    var activeid = localStorage["activeid"];
-    if (activeid) {
-        $("#" + activeid).prop("checked", true).closest("label").addClass("active");
-    }
-
-    $('#btn-switch [type="radio"]').on("change", function() {
-        $("#bg").attr("href", $(this).data('color'));        
-        localStorage.setItem('css', $(this).data('color'));        
-        localStorage.setItem('activeid', $(this).prop('id'));        
-        return false;
+    $('input[name="seconds"]').on('change', function(){
+      localStorage.setItem('seconds', $(this).val());
+    
     });
-});
+  });
 
 
 /*************** */
