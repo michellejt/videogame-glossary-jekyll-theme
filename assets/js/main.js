@@ -19,20 +19,16 @@ $(document).ready(function(){
     });
   });
 
-/*   $('input[id="dark"]').on('change', function(){
-    if($(this).is(":checked")) {
-        $('body').addClass("dark");
-    } else {
-        $('body').removeClass("dark");
-    }
+$('input[id="light"]').on('change', function(){
+  if($(this).is(":checked")) {
+      $('body').removeClass("dark");
+  }
 });
- */
-
-$('input[id="dark"]').change(function(){
-  var $this = $(this);
-  $this.is(":checked") ? $this.next('label').addClass('active') : $this.next('label').removeClass('active') 
-})
-
+$('input[id="dark"]').on('change', function(){
+  if($(this).is(":checked")) {
+      $('body').addClass("dark");
+  }
+});
 
 
 
