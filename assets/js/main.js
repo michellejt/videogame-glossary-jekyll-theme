@@ -21,12 +21,12 @@ $(document).ready(function(){
 
 
 
-  $(function() {
+/* $(function() {
     if ('input[id="dark"]:checked') {
       $(document.body).addClass('dark');
     } 
 });
-
+ */
 
 $('input[id="light"]').on('change', function(){
   if($(this).is(":checked")) {
