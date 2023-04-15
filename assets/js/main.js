@@ -23,7 +23,7 @@ $(document).ready(function(){
 
   $(function() {
     if ('input[id="dark"]:checked') {
-      $(document.body).toggle('dark');
+      $(document.body).addClass('dark');
     } 
 });
 
