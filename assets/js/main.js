@@ -19,9 +19,14 @@ $(document).ready(function(){
     });
   });
 
-  if ('input[id="light"]:checked') {
-    $(document.body).addClass('light');
-  }
+
+
+  $(function() {
+    if ('input[id="dark"]:checked') {
+      $(document.body).toggle('dark');
+    } 
+});
+
 
 $('input[id="light"]').on('change', function(){
   if($(this).is(":checked")) {
