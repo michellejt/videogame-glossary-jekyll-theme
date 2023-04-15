@@ -19,7 +19,7 @@ $(document).ready(function(){
     });
   });
 
-  $('input[id="dark"]').change(function(){
+  $('input[id="dark"]').on('change', function(){
     if($(this).is(":checked")) {
         $('body').addClass("dark");
     } else {
