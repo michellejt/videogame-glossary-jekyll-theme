@@ -19,6 +19,14 @@ $(document).ready(function(){
     });
   });
 
+  $('input[id="dark"]').change(function(){
+    if($(this).is(":checked")) {
+        $('body').addClass("dark");
+    } else {
+        $('body').removeClass("dark");
+    }
+});
+
 
 /*************** */
 function generateRandomPosts()
