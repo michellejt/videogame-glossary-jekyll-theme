@@ -19,6 +19,12 @@ $(document).ready(function(){
     });
   });
 
+  $('input[id="dark"]') (function(){
+    if($(this).is(":checked")) {
+        $('body').addClass("dark");
+    }
+  });
+
 $('input[id="light"]').on('change', function(){
   if($(this).is(":checked")) {
       $('body').removeClass("dark");
@@ -29,6 +35,7 @@ $('input[id="dark"]').on('change', function(){
       $('body').addClass("dark");
   }
 });
+
 
 
 
