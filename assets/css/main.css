@@ -119,7 +119,10 @@ body.dark {
   .slider.round:before {
 	border-radius: 50%;
   } */
-
+.mode-switch {
+    display: flex;
+    justify-content: center;
+}
   .mode-button {
     float: left;
     margin: 0 5px 0 0;
@@ -143,7 +146,8 @@ body.dark {
   }
   
   .mode-button input[type="radio"]:checked + label {
-    background: #20b8be;
+    background: white;
+    color: black;
   }
   
   .mode-button label {
