@@ -8,6 +8,7 @@ html {
 body {
     background-color: white;
     color: black;
+    font-family: 'Courier Prime', monospace;
 }
 
 .home {
@@ -43,9 +44,9 @@ body {
 .home h1 {
     font-size: 3rem;
     margin: 20px;
-    font-family: 'Cutive', serif;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 600px) {
@@ -129,7 +130,7 @@ body.dark {
 .mode-switch {
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
   .mode-button {
     float: left;
