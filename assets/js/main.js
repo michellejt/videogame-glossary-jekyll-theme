@@ -16,7 +16,7 @@ $(document).ready(function(){
     }
     $('input[name="mode-switch"]').on('change', function(){
       localStorage.setItem('mode-switch', $(this).val());
-      if ('mode-switch === dark') {
+      if ('mode-switch' = 'dark') {
         $('body').addClass("dark");
       } else {
         $('body').removeClass("dark");
