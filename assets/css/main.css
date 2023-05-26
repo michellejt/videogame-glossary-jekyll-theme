@@ -154,14 +154,13 @@ body.dark {
   
   .mode-switch .mode-button:nth-child(1) input[type="radio"]:checked + label{
     color:white;
-    background:black;
+    background:red;
 }
 
 .mode-switch .mode-button:nth-child(2) input[type="radio"]:checked + label{
-    background:white;
+    background:blue;
     color:black;
 }
-  
   .mode-button label {
     cursor: pointer;
     z-index: 90;
