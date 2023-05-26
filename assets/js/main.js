@@ -12,7 +12,7 @@ $(document).ready(function(){
       if(radios[i].value == val){
         radios[i].checked = true;
       }
-      if ('mode-switch' == 'dark') {
+      if (val == 'dark') {
         $('body').addClass("dark");
       } else {
         $('body').removeClass("dark");
