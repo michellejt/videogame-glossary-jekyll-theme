@@ -12,7 +12,7 @@ $(document).ready(function(){
       if(radios[i].value == val){
         radios[i].checked = true;
       }
-      console.log(radios[i])
+
     }
     $('input[name="mode-switch"]').on('change', function(){
       localStorage.setItem('mode-switch', $(this).val());
@@ -40,7 +40,7 @@ $('input[id="dark"]').on('change', function(){
   }
 });
 
-
+modeSwitch()
 
 
 
@@ -89,7 +89,7 @@ function generateRandomPosts()
 
                 counter++;
 
-                console.log(tipOfDay)
+                //console.log(tipOfDay)
             }
         }
     });
