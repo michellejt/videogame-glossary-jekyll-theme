@@ -81,8 +81,8 @@ a {
       font-weight: 400;
   }
   #search-form {
-    width: 80vw;
-    margin-left: -25px;
+    width: 80vw!important;
+    margin-left: -25px!important;
   }
   .term-of-the-day {
     width: calc(50% - -10em);
