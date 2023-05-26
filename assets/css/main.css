@@ -83,6 +83,10 @@ input#search {
     width: 50vw;
 }
 
+.alphabet {
+  text-align: center;
+}
+
 /*toggle*/
 body.dark {
 	background: #000;
