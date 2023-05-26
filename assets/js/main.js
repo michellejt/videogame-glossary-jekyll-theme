@@ -12,15 +12,15 @@ $(document).ready(function(){
       if(radios[i].value == val){
         radios[i].checked = true;
       }
-
-    }
-    $('input[name="mode-switch"]').on('change', function(){
-      localStorage.setItem('mode-switch', $(this).val());
       if ('mode-switch' == 'dark') {
         $('body').addClass("dark");
       } else {
         $('body').removeClass("dark");
       }
+
+    }
+    $('input[name="mode-switch"]').on('change', function(){
+      localStorage.setItem('mode-switch', $(this).val());
     });
   });
 
