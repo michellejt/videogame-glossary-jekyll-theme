@@ -12,6 +12,7 @@ $(document).ready(function(){
       if(radios[i].value == val){
         radios[i].checked = true;
       }
+      console.log(radios[i])
     }
     $('input[name="mode-switch"]').on('change', function(){
       localStorage.setItem('mode-switch', $(this).val());
