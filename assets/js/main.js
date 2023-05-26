@@ -77,7 +77,7 @@ function generateRandomPosts()
    
                 var postTitle = posts[randomIndex].title;
                 var postContent = posts[randomIndex].content;
-                divRandomPosts.append('<h3>Term of the day: <span><a href="' + postHREF + '">' + postTitle + '</a></span></h3>');
+                divRandomPosts.append('<h3>Random term: <span><a href="' + postHREF + '">' + postTitle + '</a></span></h3>');
 
                 if (counter == (numberOfPosts - 1))
                 {
