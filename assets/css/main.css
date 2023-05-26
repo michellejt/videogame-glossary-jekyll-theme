@@ -66,6 +66,10 @@ a {
   text-decoration:underline;
  }
 
+ #random_posts p {
+  margin: 5px 0 0 0;
+}
+
 @media only screen and (max-width: 600px) {
   .home h1 {
     line-height: 1;
