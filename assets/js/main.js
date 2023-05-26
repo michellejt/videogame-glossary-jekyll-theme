@@ -16,7 +16,7 @@ $(document).ready(function(){
     }
     $('input[name="mode-switch"]').on('change', function(){
       localStorage.setItem('mode-switch', $(this).val());
-    
+      $('body').addClass("dark");
     });
   });
 
@@ -40,7 +40,6 @@ $('input[id="dark"]').on('change', function(){
   }
 });
 
-modeSwitch()
 
 
 
