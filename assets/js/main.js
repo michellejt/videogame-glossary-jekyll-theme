@@ -16,7 +16,11 @@ $(document).ready(function(){
     }
     $('input[name="mode-switch"]').on('change', function(){
       localStorage.setItem('mode-switch', $(this).val());
-      $('body').addClass("dark");
+      if ('mode-switch === dark') {
+        $('body').addClass("dark");
+      } else {
+        $('body').removeClass("dark");
+      }
     });
   });
 
