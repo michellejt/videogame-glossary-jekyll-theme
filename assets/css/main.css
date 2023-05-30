@@ -9,7 +9,6 @@ body {
     background-color: white;
     color: black;
     font-family: 'Courier Prime', monospace;
-    transition: 0.5s;
 }
 
 .home {
@@ -113,6 +112,7 @@ input#search {
 body.dark {
 	background: #000;
 	color: #fff;
+  transition: 0.5s;
   }
 /*   
   .switch {
